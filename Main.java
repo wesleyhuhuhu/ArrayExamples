@@ -31,7 +31,7 @@ class Main
          */
         System.out.println("*** PRINTING ar1 *");
         
-                
+                int[] ar1 = new int[n];
         /*
          * Task 2.  Create a new array called ar2.
          *          Copy the elements of ar1 into ar2.
