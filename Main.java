@@ -44,12 +44,45 @@ class Main
             for (int i=0; i<ar2.length; i++)
                    System.out.println("ar2[" + i + "] = "+ar1[i]);
                    
-        
+        /*
+ * Task 2. Create a new array called ar2.
+ * Copy the elements of ar1 into ar2.
+ */
+ 
+ System.out.println("** ar2 **");
+ 
+ 
+ 
+ // 
+ // ar2 = ar1.clone() also does this
+ // ar2 = ar1, just copies the address so you are not copying the array
+ //
+ ar2= new int[ ar1.length ]; // sets the size of the array to equal ar1.
+ for (int i=0 ; i<ar2.length ; i++)
+ {
+ ar2[i]=ar1[i];
+ }
+ 
+ // ar2[ i ] = i 
+ for (int i=0 ; i<ar2.length ; i++)
+ System.out.println("ar2[" + i + "] = "+ar2[i]);
+ // ar2[ i ] = i
+ 
+ // Just copies the memory location so ar2 and ar1 are literally the same
+ // ar2=ar1
         
         /* 
          * Task 3. Add 1 to each element in ar1.  Print it out below
          */
-        
+        System.out.println("** Stask 3 **");
+
+        for (int i=0 ; i<ar1.length ; i++)
+        {
+            ar1[i] = ar1[i] +1;
+        }
+
+        for (int i=0 ; i<ar1.length ; i++)
+        System.out.println("ar1[" + i + "] = "+ar1[i]);
 
         
         
@@ -60,12 +93,25 @@ class Main
          *         ar1: 1 2 3
          *         ar3: 1 2 3 0 1 2 3
          */
+        int[] ar3 = new int[2*ar1.length];
         
+        for (int i = 0; i<ar1.length; i++)
+        {
+            ar3[i] = ar1[i];
+        }
+        for (int i = 0; i<ar1.length; i++)
+        {
+            ar3[i+ar1.length]=ar1[i];
+        }
         
         /*
          * Task 5.  Switch the first and last element of ar1.
-         *          print out the new ar1.  Then switch them back
-         */
+         *          print out the new ar1.  Then switch them back*/
+         int value;
+         value = ar1[0];
+         int[] ar4 = new int[ar1.length];
+         ar1[0] = ar1[ar1.length];
+         ar1[ar1.length] = value;
         
         /*
          * Task 6A. Print the 2nd to (n-1)th elements of ar1
