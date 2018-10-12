@@ -114,13 +114,24 @@ class Main
          ar1[ar1.length] = value;
         
         /*
-         * Task 6A. Print the 2nd to (n-1)th elements of ar1
+         * Task 6A. Print the 2nd to (n-1)th elements of ar1*/
+         for (int i = 2; i<n-1; i++)
+         {int[] ar5 = new int[n-3];
+         ar5[i-2]=ar1[i];}
+         /*
          * Task 6B: Print out just the odd numbers in ar1
+         */
+        for (int i=0; i<ar1.length; i=i+2)
+            {System.out.println(ar1[i]);}
+            /*
          * Task 6C: Print out the elements of ar1 when
          *          the indices are multiples of 3
          *         
          */
-        
+        for (int i=0; i<ar1.length; i++)
+            {if (i%3==0)
+                System.out.println(ar1[i]);
+            }
         /*
          * Task 7.  For each element in ar1, 
          *          If the element is even: leave alone
