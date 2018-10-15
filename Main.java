@@ -143,6 +143,11 @@ class Main
          *          ar[2]=30
          *          ar[3]=4
          */
+         for (int i=0; i<ar1.length; i++)
+            {if (i==0||i%2==0)
+                ar1[i]=ar1[i]*10;
+            }
+            System.out.println(ar1);
         
          /*
           * Task 8
