@@ -178,7 +178,10 @@ class Main
          * have.  Then create an ew array called ar4.  Copy just the odd
          * numbers from ar1 into ar4.  Print ar4
          */
-        
+        int[] ar4 = new ar4[];
+        for (i=0; i<ar2.length, i++)
+        {
+            
         /*
          * Task 10.  Shift the elements of ar4 right by 1
          * For example
