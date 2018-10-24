@@ -211,7 +211,7 @@ class Main
         int[] ar2new = new int[ar2.length];
         for (int i=0; i<ar2.length; i++)
         {
-            ar2new[i]=ar2[Math.abs(i-ar2.length)];
+            ar2new[i]=ar2[Math.abs(i-ar2.length+1)];
         }
         
         /*
