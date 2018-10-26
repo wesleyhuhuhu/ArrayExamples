@@ -237,7 +237,24 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
-        
+        int count5 = 0;
+        String[] ar5 = new String[16];
+         int k=0;
+ String[] task12Greater= new String[count5];
+ for (int i=0 ; i<ar5.length ; i++)
+ {
+     if (ar5[i].length() >5)
+     {
+         task12Greater[k]=ar5[i];
+         k++;
+     }
+ }
+ 
+ for (int i=0 ; i<task12Greater.length ; i++)
+ {
+     System.out.println(" 12 BOSS["+i+"] :"+task12Greater[i]);
+ }
+ 
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
@@ -252,7 +269,14 @@ class Main
          * Use a for loop to print out the names of monster that start with
          * a vowel
          */
-        
+        String[] monsterArray = new String[5];
+         String monster = monsterArray[0];
+         for (int i=0; i<monsterArray.length; i++){
+             
+         char c=monsterArray[i].toLowerCase().charAt(0);
+         if (c=='a' || c=='e'|| c=='i' || c=='o' || c=='u')
+         System.out.println(monsterArray[i]);
+        }
          /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
