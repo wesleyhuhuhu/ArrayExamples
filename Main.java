@@ -292,7 +292,10 @@ class Main
           *      So arindex[0]=2
           *         arindex[1]=5
           */
-         
+         int[] arx = new int[92];
+         for (int i = 1; i<92; i++)
+         {
+            arx[i-1]=i;
          /*
           * Create an arrary called "fb" and calculate the
           * first 10 fibonacci sequence.  You start with
